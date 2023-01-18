@@ -404,6 +404,7 @@ STATIC int pyexec_friendly_repl_process_char(int c) {
             mp_hal_stdout_tx_str(MICROPY_BANNER_NAME_AND_VERSION);
             mp_hal_stdout_tx_str("; " MICROPY_BANNER_MACHINE);
             mp_hal_stdout_tx_str("\r\n");
+            mp_hal_stdout_tx_str("Proudly brought to you by PlayableElectronics at https://playableel.blogspot.com\r\n");
             #if MICROPY_PY_BUILTINS_HELP
             mp_hal_stdout_tx_str("Type \"help()\" for more information.\r\n");
             #endif
@@ -559,6 +560,7 @@ friendly_repl_reset:
     mp_hal_stdout_tx_str(MICROPY_BANNER_NAME_AND_VERSION);
     mp_hal_stdout_tx_str("; " MICROPY_BANNER_MACHINE);
     mp_hal_stdout_tx_str("\r\n");
+    mp_hal_stdout_tx_str("Proudly brought to you by PlayableElectronics at https://playableel.blogspot.com\r\n");
     #if MICROPY_PY_BUILTINS_HELP
     mp_hal_stdout_tx_str("Type \"help()\" for more information.\r\n");
     #endif
